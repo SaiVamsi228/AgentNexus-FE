@@ -25,23 +25,6 @@ class InterviewState(TypedDict):
     retry_count: int
     current_topic_depth: int
 
-# --- QUESTION BANK (Same as before) ---
-# ... (Keep your QUESTIONS_DB dictionary here) ...
-QUESTIONS_DB = {
-  "Software Engineer": {
-    "technical": ["Explain process vs thread?", "Design a URL shortener?", "TCP vs UDP?", "Explain Dependency Injection?", "Debug memory leak?", "RESTful API concept?", "SQL vs NoSQL?", "Garbage collection?", "ACID properties?", "Polymorphism?"],
-    "behavioral": ["Critical production issue?", "Disagreed with manager?", "Prioritize deadlines?", "Mistake handled?", "Learn tech quickly?"]
-  },
-  "SDR": {
-    "technical": ["Research prospect?", "Gatekeeper strategy?", "Handle objection 'Happy with vendor'?", "Key metrics?", "Qualifying leads?"],
-    "behavioral": ["Repeated rejection?", "Difficult sale?", "Missed quota?", "Stay motivated?"]
-  },
-  "Retail Associate": {
-    "technical": ["Return without receipt?", "Coworker stealing?", "Out of stock?", "Messy display?"],
-    "behavioral": ["Angry customer?", "Above and beyond?", "Pressure during holidays?"]
-  }
-}
-
 def load_questions(role: str):
     return QUESTIONS_DB.get(role, QUESTIONS_DB["Software Engineer"])
 
@@ -210,5 +193,6 @@ workflow.add_conditional_edges("analyze", decide_next, {
 workflow.add_edge("ask_new_question", END)
 workflow.add_edge("handle_special", END)
 workflow.add_edge("generate_feedback", END)
+
 
 app_graph = workflow.compile()
