@@ -56,8 +56,6 @@ const DEMO_TRANSCRIPT: Message[] = [
 export default function Report() {
   const navigate = useNavigate();
 
-  // 🔥 FORCE: ALWAYS USE HARDCODED DATA
-  // This ignores any data passed from the previous page to ensure consistency.
   const transcript = DEMO_TRANSCRIPT;
   const feedback = DEMO_FEEDBACK;
 
