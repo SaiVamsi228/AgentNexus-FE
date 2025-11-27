@@ -210,15 +210,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
-
-This project is built with [Lovable](https://lovable.dev) and is licensed under MIT.
-
----
-
 ## 🔗 Links
 
-- **Live Demo**: [AgentNexus on Lovable](https://lovable.dev/projects/f8434f52-4a21-4efc-af07-69efdf111801)
 - **Vapi AI**: [vapi.ai](https://vapi.ai)
 - **Documentation**: [Lovable Docs](https://docs.lovable.dev)
 - **Support**: [Discord Community](https://discord.gg/lovable)
@@ -227,7 +220,7 @@ This project is built with [Lovable](https://lovable.dev) and is licensed under 
 
 <div align="center">
 
-**Built with ❤️ using [Lovable](https://lovable.dev)**
+**Built with ❤️**
 
 *Making interview practice accessible to everyone*
 
